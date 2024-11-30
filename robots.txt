@@ -1,0 +1,7 @@
+---
+---
+
+User-Agent: *
+{% if jekyll.environment == "production" %}Allow: /{% else %}Disallow: /{% endif %}
+Sitemap: {{ site.url }}/sitemap.xml
+Host: thelounge.chat

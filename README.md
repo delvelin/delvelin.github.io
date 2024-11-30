@@ -1,11 +1,28 @@
-# [Frasco](https://ixkaito.github.io/frasco/) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/ixkaito/frasco?color=967adc)](https://github.com/ixkaito/frasco/releases) [![Test](https://github.com/ixkaito/frasco/workflows/Test/badge.svg)](https://github.com/ixkaito/frasco/actions?query=workflow%3ATest) [![GitHub](https://img.shields.io/github/license/ixkaito/frasco)](https://github.com/ixkaito/frasco/blob/master/LICENSE)
+This is the website of [The Lounge](https://thelounge.chat/).
 
-__Quick starter for Jekyll including full setup for Sass, PostCSS, Autoprefixer, stylelint, TypeScript, Webpack, ESLint, imagemin, Browsersync, etc.__
+## What is The Lounge?
 
-## Documentation
+The Lounge is a web IRC client. More information can be found at
+https://github.com/thelounge/thelounge.
 
-You can find the Frasco documentation on the [website](https://ixkaito.github.io/frasco/).
+## Development
 
-## Copyright / License
+This website is built using [Jekyll](https://jekyllrb.com/). After cloning this
+repository, install the dependencies with:
 
-© 2015 the contributors of the Frasco project under the [MIT License](https://github.com/ixkaito/frasco/blob/master/LICENSE).
+```
+gem install bundler
+bundle install
+```
+
+To build and serve this website locally, run:
+
+```
+bundle exec jekyll serve
+```
+
+## License
+
+Available under [the MIT license](LICENSE).
+
+We use [Font Awesome](https://fontawesome.com/) free icons which are licensed under [CC BY 4.0](https://fontawesome.com/license/free).
