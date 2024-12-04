@@ -1,20 +1,8 @@
-title: Delvelin
-description: Code Vulnerability Analyzer for Java and Kotlin.
-include:
-  - _headers
-  - _redirects
-kramdown:
-  toc_levels: "2"
-url: https://thelounge.chat # Domain used by jekyll-sitemap in sitemap.xml
-plugins:
-  - jekyll-sitemap
-permalink: /:path
-collections:
-  docs:
-    output: true
-  api:
-    output: true
-    permalink: /docs/:collection/:path
-  guides:
-    output: true
-    permalink: /docs/:collection/:path
+name: Code Guide by @mdo
+description: Standards for developing consistent, flexible, and sustainable HTML and CSS.
+url: https://codeguide.co
+permalink: pretty
+sass:
+  style: compressed
+version: 4.0.0
+og_image: https://raw.githubusercontent.com/mdo/code-guide/gh-pages/code-guide-social.png
