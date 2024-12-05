@@ -1,61 +1,116 @@
-<h3 align="center">
-  <a href="https://codeguide.co/">
-    <img src="code-guide-logo.png" alt="Code Guide logo" width="192" height="192">
-  </a>
-  <br>
-  Code Guide
-</h3>
+# The Cayman theme
 
-<p align="center" markdown="1">
-  Standards for developing consistent, flexible, and sustainable HTML and CSS.
-  <br>
-  <a href="https://codeguide.co"><strong>Start reading ☞</strong></a>
-</p>
+[![.github/workflows/ci.yaml](https://github.com/pages-themes/cayman/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/cayman/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-cayman.svg)](https://badge.fury.io/rb/jekyll-theme-cayman)
 
----
+*Cayman is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/cayman), or even [use it today](#usage).*
 
-## Setup
+![Thumbnail of Cayman](thumbnail.png)
 
-Code Guide is built on Jekyll and hosted on GitHub Pages. To install Jekyll:
+## Usage
 
-```sh
-gem install jekyll
+To use the Cayman theme:
+
+1. Add the following to your site's `_config.yml`:
+
+    ```yml
+    remote_theme: pages-themes/cayman@v0.2.0
+    plugins:
+    - jekyll-remote-theme # add this line to the plugins list if you already have one
+    ```
+
+2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+
+    ```ruby
+    gem "github-pages", group: :jekyll_plugins
+    ```
+
+## Customizing
+
+### Configuration variables
+
+Cayman will respect the following variables, if set in your site's `_config.yml`:
+
+```yml
+title: [The title of your site]
+description: [A short description of your site's purpose]
 ```
 
-To start the local server:
+Additionally, you may choose to set the following optional variables:
 
-```sh
-jekyll serve
+```yml
+show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
+google_analytics: [Your Google Analytics tracking ID]
 ```
 
-Open `localhost:4000` in your browser.
+### Stylesheet
 
-## License
+If you'd like to add your own custom styles:
 
-Released under MIT by, and copyright, @mdo.
+1. Create a file called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file, exactly as shown:
+    ```scss
+    ---
+    ---
 
-## Translations
+    @import "{{ site.theme }}";
+    ```
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-Translations are maintained by their creators and may not always be up to date with the original here.
+*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
 
-- [Chinese](http://zoomzhao.github.io/code-guide/) - Translated by [Zoom Zhao](https://github.com/ZoomZhao)
-- [Chinese](http://codeguide.bootcss.com/) - Translated by [Wang Sai](https://github.com/wangsai)
-- [Dutch](http://chunfeilung.github.io/code-guide/) - Translated by [Chun Fei Lung](https://github.com/chunfeilung)
-- [French](http://pixelastic.github.io/code-guide/) - Translated by [Tim Carry](https://github.com/pixelastic/)
-- [German](http://BackendButters.github.io/code-guide/) - Translated by [BackendButters](https://github.com/BackendButters)
-- [German](https://philipbrembeck.github.io/code-guide/) - Translated by [Philip Brembeck](https://github.com/philipbrembeck)
-- [Hindi](https://hidaytrahman.github.io/code-guide/) - Translated by [Hidaytullah Rahmani](https://github.com/hidaytrahman)
-- [Indonesian](http://diagramatics.github.io/code-guide-id) - Translated by [Steven Sinatra](http://diagramatics.me)
-- [Japanese](http://kia-king.com/code-guide/) - Translated by [Kia King Ishii](https://github.com/kiaking)
-- [Korean](http://code-guide.aliencube.org/) - Translated by [Aliencube](https://github.com/aliencube)
-- [Persian](https://cg.arash-hatami.ir/) - Translated by [Arash Hatami](https://github.com/hatamiarash7)
-- [Polish](http://bondarewicz.github.io/code-guide/) - Translated by [Łukasz Bondarewicz](https://github.com/bondarewicz)
-- [Portuguese](http://diegoeis.github.io/code-guide/) - Translated by [Diego Eis](http://tableless.com.br/)
-- [Romanian](http://vmazare.github.io/code-guide-romanian/) - Translated by [Valeriu Mazare](https://github.com/vmazare)
-- [Russian](http://sadcitizen.github.io/code-guide/) - Translated by [Eugene Abrosimov](https://github.com/sadcitizen)
-- [Spanish](https://hansfelix.github.io/code-guide) - Translated by [Hans Felix](https://github.com/hansfelix)
-- [Traditional Chinese](https://codeguide.intersection.tw) - Translated by [Yuming Cheung](https://github.com/ymcheung)
+### Layouts
 
-Have a translation you'd like to link to? Open a pull request to add it here. Be sure to keep it alphabetical.
+If you'd like to change the theme's HTML layout:
 
-<3
+1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/pages-themes/cayman/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html).
+2. For more extensive changes, [copy the original template](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+3. Create a file called `/_layouts/default.html` in your site
+4. Paste the default layout content copied in the first step
+5. Customize the layout as you'd like
+
+### Customizing Google Analytics code
+
+Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
+
+### Overriding GitHub-generated URLs
+
+Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
+
+1. Look at [the template source](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
+2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
+    ```yml
+    github:
+      zip_url: http://example.com/download.zip
+      another_url: another value
+    ```
+3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
+
+*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+
+For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
+
+## Roadmap
+
+See the [open issues](https://github.com/pages-themes/cayman/issues) for a list of proposed features (and known issues).
+
+## Project philosophy
+
+The Cayman theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+
+## Contributing
+
+Interested in contributing to Cayman? We'd love your help. Cayman is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+
+### Previewing the theme locally
+
+If you'd like to preview the theme locally (for example, in the process of proposing a change):
+
+1. Clone down the theme's repository (`git clone https://github.com/pages-themes/cayman`)
+2. `cd` into the theme's directory
+3. Run `script/bootstrap` to install the necessary dependencies
+4. Run `bundle exec jekyll serve` to start the preview server
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+
+### Running tests
+
+The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.

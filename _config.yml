@@ -1,8 +1,9 @@
-name: Delvelin by @hangga
-description: Code Vulnerability Analyzer for Java and Kotlin.
-url: https://delvelin.github.io
+title: Delvelin
+description: Code Vulnerability Analyzer for Java/Kotlin.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-cayman
+
+baseurl: ""
+url: "https://delvelin.github.io"
 permalink: pretty
-sass:
-  style: compressed
-version: 0.1.0-beta
-og_image: https://raw.githubusercontent.com/mdo/code-guide/gh-pages/code-guide-social.png

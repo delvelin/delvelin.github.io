@@ -1,58 +1,96 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-    <title>
-      {{ site.name }}
-    </title>
+{% seo %}
+    <link rel="icon" href="mandali-logo-white.png" sizes="192x192" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <style>
+        .paypal-button {
+            display: inline-block;
+            background-color: #0070ba;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
 
-    <link rel="preload" as="font" href="https://rsms.me/inter/font-files/Inter-Regular.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="https://rsms.me/inter/font-files/Inter-Italic.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="https://rsms.me/inter/font-files/Inter-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+        .paypal-button:hover {
+            background-color: #005ea6;
+            transform: translateY(-2px);
+        }
 
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter-display.css">
-
-    <meta name="description" content="Standards for developing consistent, flexible, and sustainable HTML and CSS">
-    <link rel="canonical" href="https://codeguide.co">
-
-    <link rel="stylesheet" href="cg.css">
-
-    <link href="/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="/code-guide.svg" rel="icon" type="image/svg+xml">
-
-    <meta property="og:image" content="{{ site.og_image }}">
-    <meta property="og:title" content="Code Guide">
-    <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:image:width" content="2000">
-    <meta property="og:image:height" content="1000">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@mdo">
-    <meta name="twitter:title" content="Code Guide">
-    <meta name="twitter:description" content="{{ site.description }}">
-    <meta name="twitter:image" content="{{ site.og_image }}">
-
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-146052-17', 'codeguide.co');
-      ga('set', 'anonymizeIp', true);
-      ga('send', 'pageview');
-    </script>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
+        .paypal-button:active {
+            background-color: #003d73;
+            transform: translateY(0);
+        }
+    </style>
+    {% include head-custom.html %}
   </head>
   <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    {% include header.html %}
+    <header class="page-header" role="banner">
+    
+      <!-- <img width="120px" src="mandali-logo-white.png"/> -->
+      <img src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-soft-black.webp?raw=true" 
+      alt="Delvelin Scan Demo" width="260">
+      <!-- <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1> -->
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+      {% endif %}
 
-    <main class="container content">
+      <a target="_blank" href="https://repo.repsy.io/mvn/hangga/repo/io/tubrux/tubrux/0.0.3-SNAPSHOT/">
+        <img src="https://img.shields.io/badge/Latest%20Version-0.0.3--SNAPSHOT-orange" alt="Version">
+      </a><br/><br/><br/>
+
+      
+      <!-- {% if site.show_downloads %}
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+      {% endif %} -->
+
+      <a href="https://delvelin.github.io/blog" class="btn">Blog</a>
+      <a href="https://delvelin.github.io/blog/about.html" class="btn">About</a>
+    
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <!-- <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'F1F215NPV4');kofiwidget2.draw();</script> 
+
+      <a target="_blank" href="https://paypal.me/hanggaajisayekti?country.x=ID&locale.x=en_US" class="paypal-button" target="_blank">
+        Support Me on PayPal
+      </a> -->
+
       {{ content }}
 
-      {% include footer.html %}
-    </main>
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
+        
+        <span class="site-footer-credits">© 2024 Tubrux Development Team. All rights reserved. <a href="https://github.com/tubrux">github.com/tubrux</a>.</span>
+        <br/>
+        <p>Support us with donations or sponsorships to develop useful libraries.</p><br/>
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'F1F215NPV4');kofiwidget2.draw();</script> 
 
-    {% include js.html %}
+        <a target="_blank" href="https://paypal.me/hanggaajisayekti?country.x=ID&locale.x=en_US" class="paypal-button" target="_blank">
+          Support Me on PayPal
+        </a>
+
+      </footer>
+    </main>
   </body>
 </html>
