@@ -6,12 +6,12 @@ layout: default
 [![OSV.dev](https://img.shields.io/badge/OSV.dev-Vulnerability%20Database-blue)](https://google.github.io/osv.dev/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) 
 
-## Delvelin
+## Introduction
 
 **Delveline** is a Code Vulnerability Analyzer for Java and Kotlin that supports best practices in security and risk management.  
 By aligning with ISO/IEC 27001 principles, Delveline helps raise security awareness and improve software development security.
 
-<img width="90%" src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-scan.gif?raw=true"/>
+<img src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-scan.gif?raw=true"/>
 
 
 [//]: # (## **Features**)
@@ -98,15 +98,18 @@ We leverage:
 ## **Installation**
 
 Add the plugin to your Gradle project.
-
+<div markdown="1">
 ### **1. Kotlin DSL**
+</div>
+
 ```kotlin
 plugins {
     id("io.github.hangga.delvelin") version "0.1.0-beta"
 }
 ```
-
+<div markdown="1">
 ### **2. Groovy DSL**
+</div>
 ```groovy
 plugins {
     id 'io.github.hangga.delvelin' version '0.1.0-beta'
@@ -126,22 +129,28 @@ delvelin {
 ```
 
 ## **Running Delvelin Analyzer**
-
+<div markdown="1">
 ### 1. On Local Machine
 
 Run the `delvelinScan` task to analyze your project:
+</div>
 ```bash
 ./gradlew delvelinScan
 ```
-
+<div markdown="1">
 If we are using Intellij IDEA, we can also use the gradle menu in the sidebar:
+</div>
 
 <img width="400" src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-scan-gradle-menu.png?raw=true" alt="sidebar"/>
 
 ---
 
 ### 2. On Gitlab CI
+
+<div markdown="1">
 Add `delvelinScan` gradle task to our pipeline configuration, for example:
+</div>
+
 ```yaml
 stages:
   - test
@@ -183,6 +192,7 @@ This project is licensed under [MIT License](LICENSE).
 ---
 
 ## **Contributing**
+<div markdown="1">
 Contributions are welcome! Feel free to submit issues or pull requests for new features or improvements.
 
 This project is still a work in progress, and your contributions are highly valuable in helping us improve and refine it.
@@ -194,6 +204,7 @@ If you find this project useful and would like to support its development, we wo
 [![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/hanggaajisayekti/)
 
 Thank you for your support!
+</div>
 
 ---
 
