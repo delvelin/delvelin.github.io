@@ -1,33 +1,17 @@
 ---
 layout: default
 ---
+## Introduction
 
 ![Java](https://img.shields.io/badge/Java-8+-blue?logo=java) ![Kotlin](https://img.shields.io/badge/Kotlin-1.5+-blueviolet?logo=kotlin) ![Gradle Plugin](https://img.shields.io/badge/Gradle-Plugin-brightgreen?logo=gradle) ![CWE](https://img.shields.io/badge/CWE-Standards-orange) ![CVSS](https://img.shields.io/badge/CVSS-Severity-red)
 [![OSV.dev](https://img.shields.io/badge/OSV.dev-Vulnerability%20Database-blue)](https://google.github.io/osv.dev/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) 
 
-## Introduction
-
 **Delveline** is a Code Vulnerability Analyzer for Java and Kotlin that supports best practices in security and risk management.  
 By aligning with ISO/IEC 27001 principles, Delveline helps raise security awareness and improve software development security.
 
-<img src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-scan.gif?raw=true"/>
+<img width="500px" src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-scan.gif?raw=true"/>
 
-
-[//]: # (## **Features**)
-
-[//]: # (- Detects vulnerabilities using the CWE classification.)
-
-[//]: # (- CVE vulnerability detection.)
-
-[//]: # (- Supports Java and Kotlin codebases.)
-
-[//]: # (- Configurable output formats: `LOG`, `JSON`, and `HTML`.)
-
-[//]: # (- Easy integration as a Gradle plugin.)
-
-[//]: # ()
-[//]: # (---)
 
 ## Key Features
 
@@ -96,12 +80,11 @@ We leverage:
 > **Disclaimer**: Delveline may not identify all vulnerabilities but serves as a powerful first step in securing your codebase.
 
 ## **Installation**
-
-Add the plugin to your Gradle project.
 <div markdown="1">
+Add the plugin to your Gradle project.
+
 ### **1. Kotlin DSL**
 </div>
-
 ```kotlin
 plugins {
     id("io.github.hangga.delvelin") version "0.1.0-beta"
