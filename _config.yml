@@ -4,5 +4,5 @@ url: https://delvelin.github.io
 permalink: pretty
 sass:
   style: compressed
-version: 4.0.0
+version: 0.1.0-beta
 og_image: https://raw.githubusercontent.com/mdo/code-guide/gh-pages/code-guide-social.png
