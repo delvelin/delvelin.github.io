@@ -27,6 +27,8 @@ By aligning with ISO/IEC 27001 principles, Delveline helps raise security awaren
 [//]: # ()
 [//]: # (---)
 
+![delvelin process](assets/img/Delvelin%20DIagram-2024-12-08-104155.png?raw=true)
+
 ## Key Features
 
 - **ISO/IEC 27001 Alignment**: Delveline supports best practices in security awareness and risk management.
