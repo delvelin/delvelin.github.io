@@ -42,10 +42,10 @@ We leverage:
 > **Disclaimer**: Delveline may not identify all vulnerabilities but serves as a powerful first step in securing your codebase.
 
 
-### **3. Runtime-Assisted Static Analysis**
-- **Delveline** employs a unique **runtime-assisted static analysis** approach, allowing static analysis to be supplemented by runtime data, making it more adaptive than purely static tools.
+<!-- ### **3. Runtime-Assisted Static Analysis**
+- **Delveline** employs a unique **runtime-assisted static analysis** approach, allowing static analysis to be supplemented by runtime data, making it more adaptive than purely static tools. -->
 
-### **4. Flexible integration**
+### **3. Flexible integration**
 - **Delveline** can be installed as a Gradle plugin or used as a Java/Kotlin library.
 
 
