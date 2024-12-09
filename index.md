@@ -19,7 +19,7 @@ By aligning with ISO/IEC 27001 principles, Delveline helps raise security awaren
 
 ### **1. Security-Oriented Focus**
 - **Delveline** excels as a security analysis tool, offering the ability to detect vulnerabilities such as:
-    - Non-thread-safe data structures (e.g., `HashMap`, `ArrayList`, `StringBuilder`, etc) in multi-threading scenarios.
+    - Non-thread-safe data structures Detection (e.g., `HashMap`, `ArrayList`, `StringBuilder`, etc) in multi-threading scenarios.
     - Hardcoded sensitive data like API tokens, passwords, or private keys.
     - XSS vulnerabilities through regex pattern analysis on code strings.
     - Command Injection Detection.
@@ -27,7 +27,6 @@ By aligning with ISO/IEC 27001 principles, Delveline helps raise security awaren
     - XSS Vulnerability Detection.
     - Sensitive Data Detection.
     - Weak Cryptographic Detection.
-    - Multi-thread Safety Detection.
     - Dependency Vulnerability Detection (OSV.dev).
 
   **OSV.dev**, backed by Google, provides an extensive database for detecting known vulnerabilities (CVEs) in dependencies and libraries used in your project. This enables **Delveline** to identify outdated or vulnerable dependencies more effectively.
