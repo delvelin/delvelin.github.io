@@ -19,17 +19,20 @@ By aligning with ISO/IEC 27001 principles, Delveline helps raise security awaren
 
 ### **1. Security-Oriented Focus**
 - **Delveline** excels as a security analysis tool, offering the ability to detect vulnerabilities such as:
-    - Non-thread-safe data structures Detection (e.g., `HashMap`, `ArrayList`, `StringBuilder`, etc) in multi-threading scenarios.
-    - Hardcoded sensitive data like API tokens, passwords, or private keys.
-    - XSS vulnerabilities through regex pattern analysis on code strings.
-    - Command Injection Detection.
-    - SQL Injection Detection.
-    - XSS Vulnerability Detection.
-    - Sensitive Data Detection.
-    - Weak Cryptographic Detection.
+    - Non-thread-safe data structures (e.g., `HashMap`, `ArrayList`, `StringBuilder`, etc) in multi-threading scenarios.
+    - Hardcoded sensitive data like API tokens, passwords, private keys, etc.
+    - Command Injection.
+    - SQL Injection.
+    - XSS vulnerabilities.
+    - Weak Cryptographic such as MD5 or SHA-1 are considered vulnerable because they can be easily cracked..
     - Dependency Vulnerability Detection (OSV.dev).
 
   **OSV.dev**, backed by Google, provides an extensive database for detecting known vulnerabilities (CVEs) in dependencies and libraries used in your project. This enables **Delveline** to identify outdated or vulnerable dependencies more effectively.
+
+- **Coming soon (open contribution)**
+    - Insecure Http connection : Because unencrypted HTTP connections for sensitive data communication can cause data to be leaked or intercepted by third parties.
+    - Reflection Class Vulnerability: Reflection can cause vulnerabilities if it allows access or modification of sensitive classes and methods without adequate controls.
+    -  Insecure Deserialization
 
 ### **2. Industry Standards and Vulnerability Scoring**
 We leverage:
