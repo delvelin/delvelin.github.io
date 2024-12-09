@@ -9,84 +9,28 @@ layout: default
 **Delveline** is a Code Vulnerability Analyzer for Java and Kotlin that supports best practices in security and risk management.  
 By aligning with ISO/IEC 27001 principles, Delveline helps raise security awareness and improve software development security.
 
-<!-- 
-![Delvelin Scan Demo](https://github.com/hangga/delvelin/blob/main/doc/delvelin-scan.gif?raw=true) -->
-
-[//]: # (## **Features**)
-
-[//]: # (- Detects vulnerabilities using the CWE classification.)
-
-[//]: # (- CVE vulnerability detection.)
-
-[//]: # (- Supports Java and Kotlin codebases.)
-
-[//]: # (- Configurable output formats: `LOG`, `JSON`, and `HTML`.)
-
-[//]: # (- Easy integration as a Gradle plugin.)
-
-[//]: # ()
-[//]: # (---)
+## **How it Works**
 
 ![delvelin process](assets/img/delvelin-diagram-transparent.png?raw=true)
 
-## Key Features
-
-- **ISO/IEC 27001 Alignment**: Delveline supports best practices in security awareness and risk management.
-- **CWE and CVSS Integration**: Identify and prioritize vulnerabilities using industry standards.
-- **Dependency Scanning with OSV.dev**: Detect known CVEs in libraries and dependencies.
-- **Thread-Safety Detection**: Highlight unsafe structures in multi-threading scenarios.
-
-## Advantages
+## Features
 
 ### **1. Security-Oriented Focus**
 - **Delveline** excels as a security analysis tool, offering the ability to detect vulnerabilities such as:
-    - Non-thread-safe data structures (e.g., `HashMap`, `ArrayList`) in multi-threading scenarios.
+    - Non-thread-safe data structures (e.g., `HashMap`, `ArrayList`, `StringBuilder`, etc) in multi-threading scenarios.
     - Hardcoded sensitive data like API tokens, passwords, or private keys.
     - XSS vulnerabilities through regex pattern analysis on code strings.
-    - Detection aligned with **OWASP ASVS**, **CWE**, and **OSV.dev** standards.
+    - Command Injection Detection.
+    - SQL Injection Detection.
+    - XSS Vulnerability Detection.
+    - Sensitive Data Detection.
+    - Weak Cryptographic Detection.
+    - Multi-thread Safety Detection.
+    - Dependency Vulnerability Detection (OSV.dev).
 
   **OSV.dev**, backed by Google, provides an extensive database for detecting known vulnerabilities (CVEs) in dependencies and libraries used in your project. This enables **Delveline** to identify outdated or vulnerable dependencies more effectively.
 
 ### **2. Industry Standards and Vulnerability Scoring**
-- **Delveline** integrates **CWE (Common Weakness Enumeration)** as a reference for defining vulnerabilities.
-- It also uses **CVSS (Common Vulnerability Scoring System)** for severity scoring and prioritization of fixes.
-- By incorporating **OSV.dev**, it adds another layer of detection by identifying known CVEs in project dependencies.
-
-
-[//]: # (### **4. Multi-Platform Execution Support**)
-
-[//]: # (- **Delveline** can be executed in various ways:)
-
-[//]: # (    - As a standalone Java library.)
-
-[//]: # (    - Through a **Gradle Plugin**, enabling seamless integration into build pipelines.)
-
-[//]: # (    - As an **IntelliJ IDEA Plugin**, providing direct IDE integration without additional configuration.)
-
-[//]: # (---)
-
-### **3. Runtime-Assisted Static Analysis**
-- **Delveline** employs a unique **runtime-assisted static analysis** approach, allowing static analysis to be supplemented by runtime data, making it more adaptive than purely static tools.
-
-
-### **4. Target Audience**
-- **Delveline** is designed for projects requiring deep security analysis.
-
-[//]: # (---)
-
-[//]: # (**Conclusion:**  )
-
-[//]: # (**Delveline** stands out if your project needs:)
-
-[//]: # (- Comprehensive security analysis based on industry standards.)
-
-[//]: # (- Identification of vulnerable dependencies through **OSV.dev** and CVE detection.)
-
-[//]: # (- Detection of thread-safety and runtime issues.)
-
-[//]: # (- Flexible integrations &#40;Gradle, IntelliJ, Kotlin DSL&#41;.)
-
-## **How it Works**
 We leverage:
 - [CWE (Common Weakness Enumeration)](https://cwe.mitre.org/data/slices/699.html): A global standard for identifying and categorizing vulnerabilities.
 - [CVSS (Common Vulnerability Scoring System)](https://www.first.org/cvss/calculator/3.0): A framework for scoring the severity of vulnerabilities.
@@ -95,77 +39,13 @@ We leverage:
 
 > **Disclaimer**: Delveline may not identify all vulnerabilities but serves as a powerful first step in securing your codebase.
 
-## **Installation**
 
-Add the plugin to your Gradle project.
+### **3. Runtime-Assisted Static Analysis**
+- **Delveline** employs a unique **runtime-assisted static analysis** approach, allowing static analysis to be supplemented by runtime data, making it more adaptive than purely static tools.
 
-### **1. Kotlin DSL**
-```kotlin
-plugins {
-    id("io.github.hangga.delvelin") version "0.1.1-beta"
-}
-```
+### **4. Flexible integration**
+- **Delveline** can be installed as a Gradle plugin or used as a Java/Kotlin library.
 
-### **2. Groovy DSL**
-```groovy
-plugins {
-    id 'io.github.hangga.delvelin' version '0.1.1-beta'
-}
-```
-
-## **Configuration**
-
-Configure Delvelin using the `delvelin` extension.
-
-```groovy
-delvelin {
-    outputFileFormat = 'JSON' // Options: LOG, JSON, HTML
-    showDate = true
-    showSaveDialog = false
-}
-```
-
-## **Running Delvelin Analyzer**
-
-### 1. On Local Machine
-
-Run the `delvelinScan` task to analyze your project:
-```bash
-./gradlew delvelinScan
-```
-
-If we are using Intellij IDEA, we can also use the gradle menu in the sidebar:
-
-<img width="400" src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-scan-gradle-menu.png?raw=true" alt="sidebar"/>
-
----
-
-### 2. On Gitlab CI
-Add `delvelinScan` gradle task to our pipeline configuration, for example:
-```yaml
-stages:
-  - test
-
-gradle-scan:
-  stage: test
-  image: gradle:7.6-jdk8
-  script:
-    - gradle delvelinScan
-  only:
-    - main
-    - develop
-```
-
-## **Configurations**
-
-| **Parameter**    | **Type**  | **Default**       | **Description**                                      |
-|------------------|-----------|-------------------|------------------------------------------------------|
-| `outputFileFormat`   | `String`  | `LOG`             | `LOG`, `JSON`, `HTML`.               |
-| `showDate`       | `Boolean` | `true`            | Show date in the output.                            |
-| `showSaveDialog` | `Boolean` | `false`           | Prompt a save dialog after the scan.                |
-
-
----
 
 ## **License**
 This project is licensed under [MIT License](LICENSE).
