@@ -65,9 +65,5 @@ If you find this project useful and would like to support its development, we wo
 
 Thank you for your support!
 
----
-
-### **Connect**
-Feel free to reach out for questions, suggestions, or contributions:
 - 📧 Email: bazeniancode@gmail.com
 - 🌐 [GitHub Repository](https://github.com/hangga/delvelin)
