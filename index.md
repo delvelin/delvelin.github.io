@@ -11,11 +11,7 @@ layout: default
 **Delveline** is a Code Vulnerability Analyzer for Java and Kotlin that supports best practices in security and risk management.  
 By aligning with ISO/IEC 27001 principles, Delveline helps raise security awareness and improve software development security.
 
-## **How it Works**
-
-![delvelin process](assets/img/delvelin-diagram-transparent.png?raw=true)
-
-## Features
+## **Features**
 
 ### **1. Security-Oriented Focus**
 - **Delveline** excels as a security analysis tool, offering the ability to detect vulnerabilities such as:
@@ -47,6 +43,9 @@ We leverage:
 ### **3. Flexible integration**
 - **Delveline** can be installed as a Gradle plugin or used as a Java/Kotlin library.
 
+## **How it Works**
+
+![delvelin process](assets/img/delvelin-diagram-transparent.png?raw=true)
 
 ## **License**
 This project is licensed under [MIT License](LICENSE).
