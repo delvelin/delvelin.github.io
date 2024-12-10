@@ -13,7 +13,7 @@ By aligning with ISO/IEC 27001 principles, Delveline helps raise security awaren
 
 ## **How it Works**
 
-![delvelin process](assets/img/delvelin-diagram-transparent-h.png?raw=true)
+![delvelin process](assets/img/delvelin-diagram-transparent.png?raw=true)
 
 ## **Features**
 
