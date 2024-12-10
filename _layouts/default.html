@@ -43,15 +43,20 @@
           align-items: center; /* Menyusun item secara vertikal di tengah (jika tinggi div lebih dari tinggi item) */
           gap: 10px; /* Jarak antar item */
         }
+
+        .itemmenu {
+          padding: 10px;
+          /* background-color: lightblue; */
+        }
     </style>
     {% include head-custom.html %}
   </head>
   <body>
     <div class="topmenucontainer">
       <img src="assets/img/delvelin-white.webp" 
-      alt="Delvelin Scan Demo" width="160">
-      <a href="https://delvelin.github.io/blog" >Blog</a>
-        <a href="https://delvelin.github.io/blog/about.html" >About</a><br/>
+      alt="Delvelin Scan Demo" width="160" style="margin: 10px;">
+      <a href="https://delvelin.github.io/blog" class="itemmenu" >Blog</a>
+        <a href="https://delvelin.github.io/blog/about.html" class="itemmenu" >About</a><br/>
       </div>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
     <!-- skip dulu -->
