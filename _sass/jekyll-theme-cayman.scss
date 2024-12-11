@@ -134,17 +134,35 @@ a {
   margin-bottom: 0.1rem;
 
   @include large {
-    font-size: 3.25rem;
+    font-size: 2.93rem; // 90% dari 3.25rem
   }
 
   @include medium {
-    font-size: 2.25rem;
+    font-size: 2.03rem; // 90% dari 2.25rem
   }
 
   @include small {
-    font-size: 1.75rem;
+    font-size: 1.58rem; // 90% dari 1.75rem
   }
 }
+
+
+// .project-name {
+//   margin-top: 0;
+//   margin-bottom: 0.1rem;
+
+//   @include large {
+//     font-size: 3.25rem;
+//   }
+
+//   @include medium {
+//     font-size: 2.25rem;
+//   }
+
+//   @include small {
+//     font-size: 1.75rem;
+//   }
+// }
 
 .project-tagline {
   margin-bottom: 2rem;
