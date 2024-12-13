@@ -15,7 +15,9 @@ By aligning with ISO/IEC 27001 principles, Delveline helps raise security awaren
 
 ![delvelin process](https://github.com/delvelin/blog/blob/master/_posts/how-it-works-hand-write-green-line.png?raw=true)
 
-## **Features**
+<a href="https://delvelin.github.io/blog/how-it-works/">Read more</a>
+
+<!-- ## **Features**
 
 ### **1. Security-Oriented Focus**
 - **Delveline** excels as a security analysis tool, offering the ability to detect vulnerabilities such as:
@@ -66,4 +68,4 @@ If you find this project useful and would like to support its development, we wo
 Thank you for your support!
 
 - 📧 Email: bazeniancode@gmail.com
-- 🌐 [GitHub Repository](https://github.com/hangga/delvelin)
+- 🌐 [GitHub Repository](https://github.com/hangga/delvelin) -->
