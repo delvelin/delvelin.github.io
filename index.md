@@ -11,11 +11,22 @@ layout: default
 **Delveline** is a Code Vulnerability Analyzer for Java and Kotlin that supports best practices in security and risk management.  
 By aligning with ISO/IEC 27001 principles, Delveline helps raise security awareness and improve software development security. -->
 
-## **How it Works**
+## **Example Report**
 
-![delvelin process](https://github.com/delvelin/blog/blob/master/_posts/delvelin-diagram-hi-res-compress.png?raw=true)
+- In Html Format
 
-<a href="https://delvelin.github.io/blog/how-it-works/" class="btn">Read more</a>
+<img width="100%" src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-html.png?raw=true"/>
+
+- In Console Log
+
+<img width="100%" src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-1.png?raw=true"/>
+
+<img width="100%" src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-2.png?raw=true"/>
+
+
+<!-- ![delvelin process](https://github.com/delvelin/blog/blob/master/_posts/delvelin-diagram-hi-res-compress.png?raw=true)
+
+<a href="https://delvelin.github.io/blog/how-it-works/" class="btn">Read more</a> -->
 
 <!-- ## **Features**
 
