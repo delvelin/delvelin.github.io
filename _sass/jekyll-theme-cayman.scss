@@ -97,11 +97,51 @@ a {
     font-size: 0.9rem;
 
     + .itemmenu {
-      margin-top: 1.5rem; /* Margin ditingkatkan dari 1rem menjadi 1.5rem */
+      margin-top: 2rem; /* Margin diperbesar menjadi 2rem */
       margin-left: 0;
     }
   }
 }
+
+
+// .itemmenu {
+//   display: inline-block;
+//   margin-bottom: 0.5rem;
+//   color: rgba(255, 255, 255, 0.7);
+//   border-radius: 0.3rem;
+//   transition: color 0.2s, background-color 0.2s;
+
+//   &:hover {
+//     color: rgba(255, 255, 255, 0.8);
+//     text-decoration: none;
+//     background-color: rgba(255, 255, 255, 0.2);
+//   }
+
+//   + .itemmenu {
+//     margin-left: 1rem;
+//   }
+
+//   @include large {
+//     padding: 0.75rem 1rem;
+//   }
+
+//   @include medium {
+//     padding: 0.6rem 0.9rem;
+//     font-size: 0.9rem;
+//   }
+
+//   @include small {
+//     display: block;
+//     width: 100%;
+//     padding: 0.75rem;
+//     font-size: 0.9rem;
+
+//     + .itemmenu {
+//       margin-top: 1.5rem; /* Margin ditingkatkan dari 1rem menjadi 1.5rem */
+//       margin-left: 0;
+//     }
+//   }
+// }
 
 .btn {
   display: inline-block;
