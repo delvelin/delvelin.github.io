@@ -13,11 +13,11 @@ By aligning with ISO/IEC 27001 principles, Delveline helps raise security awaren
 
 ## **Example Report**
 
-- In Html Format <a target="_blank" href="https://delvelin.github.io/docs/vulnerability-report.html">Live Demo</a>
+Here is an example of a report display in HTML format, or you can view the <a target="_blank" href="https://delvelin.github.io/docs/vulnerability-report.html">Live Demo</a>.
 
 <img width="100%" src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-html.png?raw=true"/>
 
-- In Console Log <a target="_blank" href="https://www.youtube.com/watch?v=PxWDy5-Hgck">Watch Video</a>
+The console mode looks roughly as shown below. For more details, you can refer to <a target="_blank" href="https://www.youtube.com/watch?v=PxWDy5-Hgck">this view</a>.
 
 <img width="100%" src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-1.png?raw=true"/>
 
