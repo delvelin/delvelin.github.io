@@ -115,7 +115,7 @@
 
     <main id="content" class="main-content" role="main">
       <div id="markdown-content"></div>
-      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+      
       <script>
         document.addEventListener("DOMContentLoaded", () => {
           const markdownUrl = "https://raw.githubusercontent.com/hangga/delvelin/main/README.md";
@@ -131,7 +131,7 @@
             })
             .then((markdown) => {
               console.log("Markdown Content:", markdown);
-              container.innerHTML = markdown;
+              container.innerHTML = marked(markdown);
             })
             .catch((error) => {
               console.error("Error fetching the Markdown file:", error);
@@ -140,15 +140,7 @@
 
         });
       </script>
-      
-
-      <script>
-        fetch('https://raw.githubusercontent.com/hangga/delvelin/refs/heads/main/README.md')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('readme-content').innerHTML = marked(data);
-          });
-      </script>
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
       <div id="readme-content"></div>
 
       <!-- <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'F1F215NPV4');kofiwidget2.draw();</script> 
