@@ -131,7 +131,7 @@
             })
             .then((markdown) => {
               console.log("Markdown Content:", markdown);
-              container.innerHTML = marked(markdown);
+              container.innerHTML = markdown;
             })
             .catch((error) => {
               console.error("Error fetching the Markdown file:", error);
