@@ -132,12 +132,13 @@
               return response.text();
             })
             .then((markdown) => {
-              console.log("Markdown Content:", markdown);
-              container.innerHTML = marked(markdown);
+              // console.log("Markdown Content:", markdown);
+              var htmlContent = marked(markdown);
+              container.innerHTML = htmlContent;
             })
             .catch((error) => {
-              console.error("Error fetching the Markdown file:", error);
-              container.innerHTML = "<p>Unable to load content.</p>";
+              // console.error("Error fetching the Markdown file:", error);
+              container.innerHTML = error;
             });
 
         });
