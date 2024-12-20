@@ -49,17 +49,11 @@ Delveline empowers Kotlin and Java teams to develop secure and resilient applica
 <div style="display: flex; justify-content: space-between; gap: 10px;">
   <a href="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-1.png?raw=true" target="_blank">
     <img 
-      src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-1.png?raw=true" 
-      alt="Delveline Report Console View 1" 
-      style="width: 48%;"
-    />
+      src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-1.png?raw=true"/>
   </a>
   <a href="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-2.png?raw=true" target="_blank">
     <img 
-      src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-2.png?raw=true" 
-      alt="Delveline Report Console View 2" 
-      style="width: 48%;"
-    />
+      src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-2.png?raw=true"/>
   </a>
 </div>
 
