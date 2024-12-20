@@ -10,7 +10,7 @@ layout: default
 
 ### Jump ahead:
 - 1.[How it Works](#1-how-it-works)
-- 2.[Example Output](#2-example-output)
+- 2.[Example Report](#2-example-report)
 - 3.[Integrating Delvelin](#3-integrating-delvelin)
     * 3.1. [Using Delvelin Gradle Plugin](#31-using-delvelin-gradle-plugin)
         + [Kotlin DSL](#kotlin-dsl)
@@ -44,9 +44,9 @@ We leverage:
 
 Delveline empowers Kotlin and Java teams to develop secure and resilient applications while aligning their development practices with global security standards.
 
-# 2. Example Output
+# 2. Example Report
 
-<div style="display: flex; justify-content: space-between; gap: 10px;">
+<!-- <div style="display: flex; justify-content: space-between; gap: 10px;">
   <a href="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-1.png?raw=true" target="_blank">
     <img 
       src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-1.png?raw=true"/>
@@ -54,6 +54,15 @@ Delveline empowers Kotlin and Java teams to develop secure and resilient applica
   <a href="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-2.png?raw=true" target="_blank">
     <img 
       src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-2.png?raw=true"/>
+  </a>
+</div> -->
+<a href="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-1.png?raw=true" target="_blank">
+    <img style="width: 30%;"
+            src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-report-frame-console.png?raw=true"/>
+  </a>
+  <a href="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-2.png?raw=true" target="_blank">
+    <img style="width: 30%;"
+            src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-report-frame.png?raw=true"/>
   </a>
 </div>
 
