@@ -255,16 +255,3 @@ Contributions are welcome! Feel free to submit issues or pull requests for new f
 This project is still a work in progress, and your contributions are highly valuable in helping us improve and refine it.
 
 If you find this project useful and would like to support its development, we would greatly appreciate your donations. Your generosity will go a long way in ensuring the growth and sustainability of this initiative.
-
----
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F215NPV4)
-
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/hanggaajisayekti/)
-
-Thank you for your support!
-
-### Connect
-Feel free to reach out for questions, suggestions, or contributions:
-- 📧 Email: bazeniancode@gmail.com
-- 🌐 [GitHub Repository](https://github.com/hangga/delvelin)
