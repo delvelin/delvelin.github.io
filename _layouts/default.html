@@ -119,6 +119,33 @@
       <div id="markdown-content"></div>
       
       <script>
+        function markdownToHtml(markdown) {
+            // Konversi heading
+            markdown = markdown.replace(/^###### (.*$)/gim, '<h6>$1</h6>');
+            markdown = markdown.replace(/^##### (.*$)/gim, '<h5>$1</h5>');
+            markdown = markdown.replace(/^#### (.*$)/gim, '<h4>$1</h4>');
+            markdown = markdown.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+            markdown = markdown.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+            markdown = markdown.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+
+            // Konversi bold (**text**)
+            markdown = markdown.replace(/\*\*(.*)\*\*/gim, '<b>$1</b>');
+
+            // Konversi italic (*text*)
+            markdown = markdown.replace(/\*(.*)\*/gim, '<i>$1</i>');
+
+            // Konversi list unordered (- item)
+            markdown = markdown.replace(/^\s*-\s(.*$)/gim, '<ul><li>$1</li></ul>');
+
+            // Konversi paragraf (menambahkan <p> jika diperlukan)
+            markdown = markdown.replace(/^(?!<\/h[1-6]>)(?!<ul>)(?!<li>)(.*$)/gim, '<p>$1</p>');
+
+            // Menghapus baris kosong
+            markdown = markdown.replace(/^\s*[\r\n]/gm, '');
+
+            return markdown.trim();
+        }
+
         document.addEventListener("DOMContentLoaded", () => {
           const markdownUrl = "https://raw.githubusercontent.com/hangga/delvelin/main/README.md";
           const container = document.getElementById("markdown-content");
@@ -133,7 +160,7 @@
             })
             .then((markdown) => {
               // console.log("Markdown Content:", markdown);
-              var htmlContent = marked(markdown);
+              var htmlContent = markdownToHtml(markdown);
               container.innerHTML = htmlContent;
             })
             .catch((error) => {
