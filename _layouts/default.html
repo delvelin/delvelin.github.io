@@ -60,6 +60,32 @@
           color: rgba(255, 255, 255, 0.9); /* Warna teks saat hover */
         }
 
+        .tooltip {
+          position: relative;
+          display: inline-block;
+        }
+
+        .tooltip .tooltip-text {
+          visibility: hidden;
+          width: 200px;
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          border-radius: 5px;
+          padding: 5px 10px;
+          position: absolute;
+          bottom: 100%; /* Tempatkan di atas elemen */
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltip-text {
+          visibility: visible;
+          opacity: 1;
+        }
+
 
         /* .itemmenu {
           padding: 10px;
