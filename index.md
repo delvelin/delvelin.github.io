@@ -30,6 +30,7 @@ alt="Delvelin Scan Demo" width="260">
         + [Configuration Options](#configuration-options)
 - 4.[License](#4-license)
 - 5.[Contributing](#5-contributing)
+
 ---
 
 # 1. How it Works
