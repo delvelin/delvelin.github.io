@@ -56,15 +56,15 @@ Delveline empowers Kotlin and Java teams to develop secure and resilient applica
       src="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-2.png?raw=true"/>
   </a>
 </div> -->
+
 <a href="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-1.png?raw=true" target="_blank">
-    <img style="width: 30%;"
+    <img style="width: 38%;"
             src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-report-frame-console.png?raw=true"/>
   </a>
   <a href="https://github.com/delvelin/blog/blob/master/_posts/delvelin-report-console-2.png?raw=true" target="_blank">
-    <img style="width: 30%;"
+    <img style="width: 38%;"
             src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-report-frame.png?raw=true"/>
   </a>
-</div>
 
 Or view example in <a href="https://delvelin.github.io/docs/vulnerability-report.html">HTML 
  Format</a>
