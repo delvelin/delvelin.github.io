@@ -227,7 +227,7 @@ fun `vulnerability test with save dialog`() {
 }
 ```
 
-![Delvelin Scan Demo](doc/save-dialog-blur_magicstudio_8tefrlgzfnr-cmprz.png?raw=true)
+![Delvelin Scan Demo](https://github.com/hangga/delvelin/blob/main/doc/save-dialog-blur_magicstudio_8tefrlgzfnr-cmprz.png?raw=true)
 
 ### Configuration Options
 
