@@ -1,13 +1,11 @@
 ---
 layout: default
 ---
-<img src="https://github.com/hangga/delvelin/blob/main/doc/delvelin-soft-black.webp?raw=true" 
-alt="Delvelin Scan Demo" width="260">
 
 ![Java](https://img.shields.io/badge/Java-8+-blue?logo=java) ![Kotlin](https://img.shields.io/badge/Kotlin-1.5+-blueviolet?logo=kotlin) ![Gradle Plugin](https://img.shields.io/badge/Gradle-Plugin-brightgreen?logo=gradle) ![CWE](https://img.shields.io/badge/CWE-Standards-orange) ![CVSS](https://img.shields.io/badge/CVSS-Severity-red)
 [![OSV.dev](https://img.shields.io/badge/OSV.dev-Vulnerability%20Database-blue)](https://google.github.io/osv.dev/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) 
----
+
 **Delveline** is a tool for Kotlin and Java developers that identifies and categorizes vulnerabilities, helping teams align with security standards like ISO 27001 and improve code security.
 
 ### Jump ahead:
